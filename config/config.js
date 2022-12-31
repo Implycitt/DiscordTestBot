@@ -1,4 +1,4 @@
-const { version } = require(`../package.json`)
+const { version } = require(`../package.json`);
 
 const channels = require(`./channels.js`);
 const colors = require(`./colors.js`);

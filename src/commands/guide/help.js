@@ -1,4 +1,4 @@
-const config = require(`../../config/config`);
+const config = require(`../../../config/config`);
 
 const { SlashCommandBuilder } = require(`@discordjs/builders`);
 const {
@@ -18,7 +18,6 @@ const cmd = new SlashCommandBuilder()
  * The actual code behind the command.
  * @param {Client} client The Discord client.
  * @param {ChatInputCommandInteraction} interaction The invoking interaction.
- * @returns 
  */
 const run = async (client, interaction) => {
     if (interaction.guild === null || interaction.guild.rulesChannel === null) return;
